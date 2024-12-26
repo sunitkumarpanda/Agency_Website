@@ -52,22 +52,18 @@ export default function FUIDarkHeroSectionWithScrolls() {
 
               <div className="mt-6 space-y-6 tracking-tight text-gray-500 sm:text-xl font-geist text-md">
                 <p>
-                 
-
-
                   We are a full-service software development agency 
                   that specializes in building custom web applications,
                   scalable SaaS platforms, using technologies like 
                   JavaScript, PHP, Nodejs, pyhon, 
                   SEO and digital marketing services.
-
-
-
                 </p>
                 <p>
-                  Whether you need robust web applications or blockchain-powered
-                  products, our agency is your go-to partner in turning concepts
-                  into impactful digital experiences.
+                  Whether it's web development, SaaS solutions, SEO, 
+                  or digital marketing,
+                  we have the expertise to bring your vision to life.
+                  Our team combines innovation and expertise to create tailored,
+                  solutions that meet your unique needs.
                 </p>
               </div>
               <div className="flex max-sm:flex-col md:gap-4">
