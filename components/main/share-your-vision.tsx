@@ -18,7 +18,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "./input";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { trackEvent } from "@/lib/analytics";
 
@@ -39,6 +39,16 @@ export const ShareYourVision = () => {
     resolver: zodResolver(schema),
   });
 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://s.pageclip.co/v1/pageclip.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   const onValueChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     form.setValue(
       e.target.name as keyof z.infer<typeof schema>,
@@ -53,30 +63,25 @@ export const ShareYourVision = () => {
       Platform: navigator.userAgent.includes("Mobile") ? "Mobile" : "Desktop",
     });
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        access_key: data.access_key,
-        name: data.name,
-        email: data.email,
-        message: data.projectIdea,
-        X: data.xUsername,
-      }),
-    });
-    const result = await response.json();
-    if (result.success) {
-      toast({ title: result.message, variant: "success" });
-      form.reset();
-    } else {
-      toast({ title: result.message, variant: "destructive" });
-      form.reset();
-    }
+    // Pageclip form submission
+    (window as any).Pageclip.formSubmit(
+      document.querySelector(".pageclip-form"),
+      {
+        success: function (response: any) {
+          console.log("Form submitted successfully:", response);
+          toast({ title: "Form submitted successfully", variant: "success" });
+          form.reset();
+        },
+        error: function (error: any) {
+          console.error("Form submission error:", error);
+          toast({ title: "Form submission error", variant: "destructive" });
+        },
+      }
+    );
+
     setLoading(false);
   };
+
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -95,8 +100,10 @@ export const ShareYourVision = () => {
         </DialogHeader>
         <Form {...form}>
           <form
-            className="flex flex-col items-center justify-start w-full gap-3"
+            className="flex flex-col items-center justify-start w-full gap-3 pageclip-form"
             onSubmit={form.handleSubmit(onSubmit)}
+            action="https://send.pageclip.co/kBZGJBTwrip5mknl9c5rWnmTJKrGjWV7"
+            method="post"
           >
             <FormField
               control={form.control}
