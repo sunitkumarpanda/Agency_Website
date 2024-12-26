@@ -16,7 +16,7 @@ export const GrowthCard = () => {
       <div>
         <div className="absolute -top-3 left-6">
           <span className="bg-gray-800 text-white px-4 py-1.5 rounded-full text-sm shadow-lg">
-            {/* Ongoing Support */}
+            Must demanded
           </span>
         </div>
         <div className="inline-block bg-gray-800 text-white px-4 py-1.5 rounded-full text-sm mb-6 shadow-lg">
@@ -34,16 +34,17 @@ export const GrowthCard = () => {
           <h3 className="text-xl font-semibold mb-4 text-gray-800">
           
             Provided Services:<br />
-            1. Web design<br />
-            2. SEO<br />
-            3. Digital Marketing<br />
-            4. Content Writing<br />
-            5. Graphic Design
+            
 
 
           </h3>
           <ul className="space-y-4">
             {[
+              "Web design",
+              "SEO",
+              "Digital Marketing",
+              "Content Writing",
+              "Graphic Design",
 
             ].map((feature, index) => (
               <li key={index} className="flex items-center gap-3">
