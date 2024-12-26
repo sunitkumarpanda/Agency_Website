@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useState, FormEvent, useEffect } from "react";
 import Container from "../../shared/Container";
 import Topic from "../../shared/Topic";
 import Image from "next/image";
@@ -22,17 +22,39 @@ const ContactPage = () => {
     email: "",
     message: "",
   });
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://s.pageclip.co/v1/pageclip.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   const handleContactSubmit = (type: ContactType) => {
     trackEvent("Contact Form Submit", {
       SubmitType: type,
       Platform: navigator.userAgent.includes("Mobile") ? "Mobile" : "Desktop",
     });
   };
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Add your form submission logic here
+    // Pageclip form submission
+    (window as any).Pageclip.formSubmit(
+      document.querySelector(".pageclip-form"),
+      {
+        success: function (response: any) {
+          console.log("Form submitted successfully:", response);
+        },
+        error: function (error: any) {
+          console.error("Form submission error:", error);
+        },
+      }
+    );
     handleContactSubmit(formData.contactType);
-    console.log("Form submitted:", formData);
   };
 
   const handleInputChange = (
@@ -63,7 +85,12 @@ const ContactPage = () => {
 
       <div className="relative flex flex-col items-center md:flex-row my-6  bg-zinc-100 dark:bg-background rounded-[45px] border:1px_solid_rgba(255,255,255,.1)] [box-shadow:0_-20px_80px_-20px_#8686f01f_inset] border">
         <div className="row items-center py-12 px-4 md:px-20 md:w-8/12 md:py-10">
-          <form onSubmit={handleSubmit} className="space-y-8 md:w-full">
+          <form
+            onSubmit={handleSubmit}
+            className="space-y-8 md:w-full pageclip-form"
+            action="https://send.pageclip.co/kBZGJBTwrip5mknl9c5rWnmTJKrGjWV7"
+            method="post"
+          >
             <div className="flex">
               <div className="flex items-center me-4">
                 <input
