@@ -16,7 +16,7 @@ const TeamPage = () => {
       <div className="relative flex flex-col items-center md:flex-row pt-[8rem]">
         <Topic
           title="Team"
-          description="Meet the skilled and experienced team behind our successful digital marketing strategies"
+          description="Discover the talented and dedicated team driving our innovative digital marketing strategies and cutting-edge development solutions."
         />
       </div>
 
