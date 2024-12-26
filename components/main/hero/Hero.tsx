@@ -40,13 +40,13 @@ export default function FUIDarkHeroSectionWithScrolls() {
                 textClassName="justify-start"
                 visiblity={isInView}
                 className="max-w-[400px] text-3xl font-normal tracking-tighter text-transparent text-white sm:text-7xl font-geist"
-                text={"From Concept to Creation"}
+                text={"From Vision to Reality"}
               />
               <GradualSpacing
                 textClassName="justify-start"
                 visiblity={isInView}
                 className="max-w-[400px] text-2xl font-normal tracking-tighter text-transparent text-white sm:text-7xl font-geist"
-                text={"Making Ideas Happen"}
+                text={"Transforming Ideas into Impactful Digital Solutions"}
               />
 
               <div className="mt-6 space-y-6 tracking-tight text-gray-500 sm:text-xl font-geist text-md">
