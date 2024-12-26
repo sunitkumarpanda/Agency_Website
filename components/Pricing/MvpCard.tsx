@@ -23,14 +23,14 @@ export const MvpCard = () => {
           One time
         </div>
         <h2 className="text-2xl font-bold mb-2 text-gray-800">
-          MVP Development Package
+          Web Development Package
         </h2>
         <div className="mb-4">
           <span className="text-4xl font-bold text-gray-800">
-            Starting at $1997
+            Starting at ₹3999
           </span>
         </div>
-        <p className="text-red-600 mb-8">20% off for early adopters</p>
+        <p className="text-red-600 mb-8">50% off for new adopters</p>
 
         <div className="mb-8">
           <h3 className="text-xl font-semibold mb-4 text-gray-800">
@@ -38,11 +38,11 @@ export const MvpCard = () => {
           </h3>
           <ul className="space-y-4">
             {[
-              "Complete MVP development in 2-3 weeks",
-              "Web application/ Mobile App",
+              "Complete  development in 2-3 weeks",
+              "Web application",
               "Modern, scalable tech stack",
-              "Seamless integrations (payments, auth, etc.)",
-              "30 days of free maintenance",
+              "Free Domain & Hosting provided if needed on Vercel",
+              "1 year of free maintenance",
               "Personalized, founder-led development",
               "Regular updates and transparent process",
             ].map((feature, index) => (
