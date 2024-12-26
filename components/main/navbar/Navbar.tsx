@@ -27,7 +27,7 @@ const Navigation = () => {
                 href="/"
                 className="flex items-center space-x-3 rtl:space-x-reverse text-4xl font-bold"
               >
-                AceXlabs
+                टेकमन्थन
               </Link>
               <button
                 className="block lg:hidden"

@@ -4,7 +4,7 @@ import Container from '@/components/shared/Container';
 import Topic from '@/components/shared/Topic';
 
 const companyHistory = [
-  { year: '2019', event: 'Founded AceXLabs' },
+  { year: '2019', event: 'Founded टेकमन्थन' },
   { year: '2020', event: 'Expanded services to include Blockchain and SEO' },
   { year: '2021', event: 'Opened second office and doubled team size' },
   { year: '2023', event: 'Expanded services to include AI/ML Development' },
