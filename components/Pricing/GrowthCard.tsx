@@ -33,7 +33,7 @@ export const GrowthCard = () => {
         <div className="mb-8">
           <h3 className="text-xl font-semibold mb-4 text-gray-800">
             Provided Services:
-            1.Web design
+            <br>1.Web design</br>
             2.SEO
             3.Digital Marketing
             4.Content Writing
@@ -41,7 +41,7 @@ export const GrowthCard = () => {
           </h3>
           <ul className="space-y-4">
             {[
-                
+
             ].map((feature, index) => (
               <li key={index} className="flex items-center gap-3">
                 <div className="bg-gray-800 rounded-full p-1 shadow-md">
