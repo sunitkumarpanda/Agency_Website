@@ -21,7 +21,7 @@ export const servicesData = [
     },
     {
         "id": 3,
-        "name1": "MVP Development",
+        "name1": "SEO Optimization",
         "name2": "for Startups",
         "description":"Quick, reliable MVPs to launch and validate your ideas faster",
         "background": "h-[310px] p-12 bg-black dark:bg-gray-900 rounded-[45px] shadow-card border border-black dark:border-white justify-between items-center flex text-white",
