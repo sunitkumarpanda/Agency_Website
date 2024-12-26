@@ -40,20 +40,22 @@ export default function FUIDarkHeroSectionWithScrolls() {
                 textClassName="justify-start"
                 visiblity={isInView}
                 className="max-w-[400px] text-3xl font-normal tracking-tighter text-transparent text-white sm:text-7xl font-geist"
-                text={"From Concept to Creation"}
+                text={"From Vision to Reality"}
               />
               <GradualSpacing
                 textClassName="justify-start"
                 visiblity={isInView}
                 className="max-w-[400px] text-2xl font-normal tracking-tighter text-transparent text-white sm:text-7xl font-geist"
-                text={"Making Ideas Happen"}
+                text={"Transforming Ideas into Impactful Digital Solutions"}
               />
 
               <div className="mt-6 space-y-6 tracking-tight text-gray-500 sm:text-xl font-geist text-md">
                 <p>
-                  From sleek websites to scalable SaaS platforms and innovative
-                  MVPs, we specialize in building with JavaScript, Golang, Rust,
-                  and Web3 technologies.
+                  We are a full-service software development agency that specializes
+                  in building custom web applications,
+                  scalable SaaS platforms, using technologies like 
+                  JavaScript, PHP, Nodejs, pyhon, SEO and digital marketing services.
+
                 </p>
                 <p>
                   Whether you need robust web applications or blockchain-powered
