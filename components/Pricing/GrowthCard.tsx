@@ -32,12 +32,15 @@ export const GrowthCard = () => {
 
         <div className="mb-8">
           <h3 className="text-xl font-semibold mb-4 text-gray-800">
-            Provided Services:
-            <br>1.Web design</br>
-            2.SEO
-            3.Digital Marketing
-            4.Content Writing
-            5.graphic Design
+          
+            Provided Services:<br />
+            1. Web design<br />
+            2. SEO<br />
+            3. Digital Marketing<br />
+            4. Content Writing<br />
+            5. Graphic Design
+
+
           </h3>
           <ul className="space-y-4">
             {[
