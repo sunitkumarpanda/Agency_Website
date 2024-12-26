@@ -51,9 +51,11 @@ export default function FUIDarkHeroSectionWithScrolls() {
 
               <div className="mt-6 space-y-6 tracking-tight text-gray-500 sm:text-xl font-geist text-md">
                 <p>
-                  From sleek websites to scalable SaaS platforms and innovative
-                  MVPs, we specialize in building with JavaScript, Golang, Rust,
-                  and Web3 technologies.
+                  We are a full-service software development agency that specializes
+                  in building custom web applications,
+                  scalable SaaS platforms, using technologies like 
+                  JavaScript, PHP, Nodejs, pyhon, SEO and digital marketing services.
+
                 </p>
                 <p>
                   Whether you need robust web applications or blockchain-powered
