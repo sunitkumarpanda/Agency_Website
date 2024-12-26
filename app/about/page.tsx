@@ -4,16 +4,16 @@ import Container from '@/components/shared/Container';
 import Topic from '@/components/shared/Topic';
 
 const companyHistory = [
-  { year: '2019', event: 'Founded टेकमन्थन' },
-  { year: '2020', event: 'Expanded services to include Blockchain and SEO' },
-  { year: '2021', event: 'Opened second office and doubled team size' },
-  { year: '2023', event: 'Expanded services to include AI/ML Development' },
+  { year: '2024', event: 'Founded टेकमन्थन' },
+  // { year: '2020', event: 'Expanded services to include Blockchain and SEO' },
+  // { year: '2021', event: 'Opened second office and doubled team size' },
+  // { year: '2023', event: 'Expanded services to include AI/ML Development' },
 ];
 
 const teamHighlights = [
-  { name: 'Pratik Tiwari', role: 'Senior Engineer', image: 'https://avatars.githubusercontent.com/u/64960569?v=4' },
-  { name: 'Jacques', role: 'Senior AI Engineer', image: 'https://pbs.twimg.com/profile_images/1764600506721116160/ZI5JGcHu_400x400.jpg' },
-  { name: 'Axat Bhardwaj', role: 'Smart Contract Engineer', image: 'https://pbs.twimg.com/profile_images/1847924192085479424/d8vknhTn_400x400.jpg' },
+  { name: 'Sunit Kumar Panda', role: 'Senior Engineer', image: 'https://techtideinnovations.vercel.app/assets/images/team/sunitkumarpanda.png' },
+  { name: 'Subhankar Pahi', role: 'Senior AI Engineer', image: 'https://techtideinnovations.vercel.app/assets/images/team/subhankarpahi.png' },
+  { name: 'Raj Kishore Behera', role: 'Smart Contract Engineer', image: 'https://techtideinnovations.vercel.app/assets/images/team/rajkishorebehera.png' },
 ];
 
 export default function AboutUs() {
