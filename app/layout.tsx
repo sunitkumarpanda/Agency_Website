@@ -3,6 +3,7 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/main/navbar/Navbar";
 import { Toaster } from "@/components/ui/toaster";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "TechManthan",
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={`${spaceGrotesk.className}  antialiased dark`}>
         <Navbar />
         {children}
+        <Analytics />
         <Toaster />
       </body>
     </html>

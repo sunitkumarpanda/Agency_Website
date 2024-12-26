@@ -18,6 +18,7 @@
     "@radix-ui/react-toast": "^1.2.2",
     "@react-three/fiber": "^8.17.10",
     "@types/mixpanel-browser": "^2.50.2",
+    "@vercel/analytics": "^1.4.1",
     "axios": "^1.7.7",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
