@@ -16,32 +16,32 @@ export const GrowthCard = () => {
       <div>
         <div className="absolute -top-3 left-6">
           <span className="bg-gray-800 text-white px-4 py-1.5 rounded-full text-sm shadow-lg">
-            Ongoing Support
+            {/* Ongoing Support */}
           </span>
         </div>
         <div className="inline-block bg-gray-800 text-white px-4 py-1.5 rounded-full text-sm mb-6 shadow-lg">
           Monthly Retainer
         </div>
         <h2 className="text-2xl font-bold mb-2 text-gray-800">
-          Growth Retainer Package
+        Find the ideal package tailored to your needs.
         </h2>
         <div className="mb-4">
-          <span className="text-4xl font-bold text-gray-800">$2497/month</span>
+          <span className="text-4xl font-bold text-gray-800">₹2000/Per Service</span>
         </div>
-        <p className="text-gray-600 mb-8">No commitment, cancel anytime</p>
+        <p className="text-gray-600 mb-8">Select service as per your need</p>
 
         <div className="mb-8">
           <h3 className="text-xl font-semibold mb-4 text-gray-800">
-            Dedicated Monthly Services:
+            Provided Services:
+            1.Web design
+            2.SEO
+            3.Digital Marketing
+            4.Content Writing
+            5.graphic Design
           </h3>
           <ul className="space-y-4">
             {[
-              "60 hours of development time per month",
-              "Flexible hours allocation",
-              "Weekly strategy calls",
-              "Priority feature development",
-              "Continuous maintenance & optimization",
-              "Same-day emergency support",
+                
             ].map((feature, index) => (
               <li key={index} className="flex items-center gap-3">
                 <div className="bg-gray-800 rounded-full p-1 shadow-md">
