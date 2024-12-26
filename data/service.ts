@@ -1,8 +1,8 @@
 export const servicesData = [
     {
         "id": 1,
-        "name1": "Custom Website",
-        "name2": "Development",
+        "name1": "Website development",
+        "name2": " ",
         "description":"Stunning, responsive websites designed for your brand.",
         "background": "h-[310px] p-12 bg-zinc-100 dark:bg-zinc-800 rounded-[45px] shadow-card border border-black dark:border-white justify-between items-center flex text-black dark:text-white",
         "arrow": "./services/ag.svg",
@@ -12,7 +12,7 @@ export const servicesData = [
     {
         "id": 2,
         "name1": "SaaS Product",
-        "name2": "Development",
+        // "name2": "Development",
         "description":"Scalable SaaS solutions for your business.",
         "background": "h-[310px] p-12 bg-lime dark:bg-lime-800 rounded-[45px] shadow-card border border-black dark:border-white justify-between items-center flex text-black dark:text-white",
         "arrow": "./services/ag.svg",
@@ -22,7 +22,7 @@ export const servicesData = [
     {
         "id": 3,
         "name1": "SEO Optimization",
-        "name2": "for Startups",
+        // "name2": "for Startups",
         "description":"Boost your rankings and grow your business with expert SEO.",
         "background": "h-[310px] p-12 bg-black dark:bg-gray-900 rounded-[45px] shadow-card border border-black dark:border-white justify-between items-center flex text-white",
         "arrow": "./services/ag.svg",
@@ -32,7 +32,7 @@ export const servicesData = [
     {
         "id": 4,
         "name1": "Digital Marketing",
-        "name2": "for Startups",
+        // "name2": "for Startups",
         "description":"Boost your brand and drive growth with expert digital marketing.",
         "background": "h-[310px] p-12 bg-zinc-100 dark:bg-zinc-800 rounded-[45px] shadow-card border border justify-between items-center flex text-black dark:text-white",
         "arrow": "./services/ag.svg",
