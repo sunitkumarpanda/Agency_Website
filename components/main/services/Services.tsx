@@ -13,7 +13,7 @@ function Services() {
         >
           <Topic
             title="Our Services"
-            description="Our agency helps businesses grow and succeed online through a range of services including WEB, SaaS, social media, and other digital solutions."
+            description="Our agency helps businesses grow and succeed online through a range of services including WEB, SaaS, Social media, and other digital solutions."
           ></Topic>
         </div>
 
